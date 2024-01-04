@@ -1,0 +1,35 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+}
+
+.main-wrapper {
+  background-image: url("../public/assets/images/imageBg1.svg");
+  background-position: right center;
+  background-size: 53% 95vh;
+  background-repeat: no-repeat;
+  width: 100%;
+  margin: 0 auto;
+  height: 95vh;
+  top: 0;
+}
+
+@media (max-width: 920px) {
+  .main-wrapper {
+    background-size: contain;
+  }
+ }
+

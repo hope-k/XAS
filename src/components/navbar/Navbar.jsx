@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import TalkToUsModal from "../modals/TalkToUsModal/TalkToUsModal";
 import "./Navbar.css";
+import { motion, AnimatePresence } from 'framer-motion'
 
 const Navbar = () => {
   const location = useLocation();
@@ -71,11 +72,14 @@ const Navbar = () => {
       </nav>
 
       {/* Modal */}
-      {
-        showModal && (
-          activeModal === "talk-to-us" && <TalkToUsModal handleCloseModal={handleCloseModal} />
-        )
-      }
+      <AnimatePresence>
+        {
+          showModal && (
+            activeModal === "talk-to-us" && <TalkToUsModal handleCloseModal={handleCloseModal} />
+          )
+        }
+
+      </AnimatePresence>
 
     </>
   );

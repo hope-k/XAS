@@ -5,7 +5,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.75); /* Semi-transparent black background */
+  background-color: rgba(0, 0, 0, 0.80); /* Semi-transparent black background */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,8 +16,10 @@
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  width: 80%;
-  height: 80%;
+  width: 100%;
+  height: 100%;
+  max-width: 60rem;
+  max-height: 550px;
   position: relative;
   padding: 2rem;
 
@@ -29,3 +31,78 @@
   right: 1rem;
   cursor: pointer;
 }
+
+.modal-overlay .modal-body h2 {
+    color: var(--primary-color);
+    text-transform: capitalize;
+}
+
+.modal-body {
+    padding: 1rem;
+}
+
+.modal-body ul {
+    list-style: none;
+    padding: 0 3rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.modal-body ul li {
+    margin-bottom: 1rem;
+    position: relative;
+    padding: auto;
+    
+}
+  
+.modal-body ul li label {
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.modal-body h1 {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.modal-body h3 {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
+.modal-body p {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 2rem;
+}
+
+.tab-content {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+.label-underline {
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background-color: var(--secondary-color);
+  
+}
+
+.close-button-svg {
+    width: 20px;
+    height: 20px;
+    color: var(--secondary-color);
+}
+
+
+

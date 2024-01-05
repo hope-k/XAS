@@ -48,7 +48,9 @@ const TalkToUsModal = ({ handleCloseModal }) => {
 
                 <div className="modal-body">
 
-                    <h1>We help you go Agile Three ways:</h1>
+                    <h1>We help you go Agile Three ways
+                        <span className='heading-underline'></span>
+                    </h1>
                     <h3>
                         Help you do it through Agile Coaching
                         <br />

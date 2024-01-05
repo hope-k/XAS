@@ -63,22 +63,31 @@
 }
 
 .modal-body h1 {
+    display: inline-block;
     color: var(--primary-color);
     font-size: 1.4rem;
     font-weight: 600;
+    letter-spacing: -.5px;
+    position: relative;
+    text-transform: capitalize;
+
+    
 }
 .modal-body h3 {
     color: var(--primary-color);
-    font-size: 1.2rem;
-    font-weight: 500;
-    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: .5rem;
+    letter-spacing: -.5px;
 }
 
 .modal-body p {
     color: var(--primary-color);
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 400;
     margin-top: 2rem;
+    letter-spacing: -.5px;
+
 }
 
 .tab-content {
@@ -87,6 +96,14 @@
 
 }
 
+.heading-underline {
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    height: 8px;
+    width: 5rem;
+    background-color: var(--secondary-color);
+}
 
 .label-underline {
     position: absolute;
